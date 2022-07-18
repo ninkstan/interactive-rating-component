@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(/images/bg-intro-desktop.png);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* typo */
+
+h1 {
+    font-size: 45px;
+    color: hsl(0, 0%, 100%);
+    line-height: 45px;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+.free-trial b {
+    font-weight: 700;
+}
+
+.free-trial p {
+    font-weight: 400;
+    padding-top: 12px;
+}
+
+.caution b {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+.caution {
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 40px ;
+}
+
+input {
+    font-size: 16px;
+    color: hsl(249, 10%, 26%);
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#typeInfo {
+    font-size: 16px;
+    color: hsl(0,100%,74%);
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+button {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+/* body */
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+/* left side */
+
+.ads {
+    max-width: 500px;
+    margin: auto 2rem auto 10rem;
+}
+
+/* right side */
+
+.form {
+    min-width: fit-content;
+    margin: 6rem 10rem 6rem 2rem;
+}
+
+/* container */
+
+.free-trial {
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    height: 50px;
+    width: 500px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.register {
+    background-color: hsl(0, 0%, 100%);
+    min-height: 300px;
+    border-radius: 10px;
+}
+
+input {
+    margin: 10px 8%;
+    width: 84%;
+    height: 50px;
+    border-color: hsl(246, 25%, 77%);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#fname {
+    margin-top: 50px;
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    border-style: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    height: 50px;
+    width: 84%;
+    margin: 10px 8%;
+}
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 375px) {
+
+/* typo */
+
+    h1 {
+        font-size: 30px;
+        margin: auto 90px;
+    }
+
+    .ads p {
+        font-size: 16px;
+        color: hsl(0, 0%, 100%);
+        font-weight: 400;
+        margin: auto 90px;
+    }
+
+    .free-trial p {
+        margin: auto 100px;
+        padding-top: 20px;
+    }
+
+    main {
+        display: block;
+        margin-bottom: 5rem;
+    }
+    
+    .caution{
+        padding: 10px 70px 5px 70px ;
+    }
+
+    /* upper */
+    .ads {
+        width: 600px;
+        margin: 5rem auto;
+        text-align: center;
+    }
+    /* lower */ 
+    .form {
+        margin: auto 50px;
+        display: block;
+    }
+
+    /* container */
+
+    .free-trial {
+        height: 90px;
+        width: 400px;
+        margin: 0 auto 30px auto;
+    } 
+    .register {
+        height: 490px;
+    }
+}
