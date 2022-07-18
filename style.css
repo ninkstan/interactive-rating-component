@@ -1,194 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
 body {
-    background-color: hsl(0, 100%, 74%);
-    background-image: url(/images/bg-intro-desktop.png);
-    font-family: 'Poppins', sans-serif;
-}
-
-/* typo */
-
-h1 {
-    font-size: 45px;
-    color: hsl(0, 0%, 100%);
-    line-height: 45px;
-    padding-bottom: 20px;
-}
-
-p {
-    font-size: 16px;
-    color: hsl(0, 0%, 100%);
-    font-weight: 400;
-}
-
-.free-trial b {
-    font-weight: 700;
-}
-
-.free-trial p {
-    font-weight: 400;
-    padding-top: 12px;
-}
-
-.caution b {
-    color: hsl(0, 100%, 74%);
-    font-weight: 700;
-}
-
-.caution {
-    color: hsl(246, 25%, 77%);
-    font-size: 12px;
-    text-align: center;
-    padding-bottom: 40px ;
-}
-
-input {
-    font-size: 16px;
-    color: hsl(249, 10%, 26%);
-    font-weight: 600;
-    border-radius: 10px;
-}
-
-#typeInfo {
-    font-size: 16px;
-    color: hsl(0,100%,74%);
-    font-weight: 600;
-    border-radius: 10px;
-}
-
-button {
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-::placeholder {
-    font-size: 14px;
-    font-weight: 600;
-    padding-left: 20px;
-}
-
-/* body */
-
-main {
-    display: flex;
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(216, 12%, 8%);
     width: 100%;
 }
 
-/* left side */
-
-.ads {
-    max-width: 500px;
-    margin: auto 2rem auto 10rem;
+main {
+    margin: 10% auto;
+    background: linear-gradient(180deg, hsl(213, 19%, 18%) 10%, hsl(216, 15%, 13%) 100%) ;
+    align-content: center;
+    width: 400px;
+    border-radius: 20px; 
 }
 
-/* right side */
-
-.form {
-    min-width: fit-content;
-    margin: 6rem 10rem 6rem 2rem;
+div {
+    padding: 30px;
 }
 
-/* container */
+.star-img {
+    background-color: hsl(215, 15%, 22%);
+    padding: 15px 15px 15px 15px;
+    border-radius: 50%;
+}
 
-.free-trial {
-    background-color: hsl(248, 32%, 49%);
+h1 {
+    color: white;
+    padding-top: 6px;
+    margin-bottom: 0;
+    font-size: 26px;
+}
+
+p {
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    line-height: 25px;
+}
+
+span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+span button {
+    border: none;
+    font-size: 15px;
+    background-color: hsl(215, 15%, 22%);
+    color: hsl(217, 12%, 63%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+span button:hover {
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.active {
+    color: white;
+    background-color: hsl(217, 12%, 63%);
+}
+
+.submit {
+    text-decoration: none;
+    font-family: 'Overpass',sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
     text-align: center;
-    height: 50px;
-    width: 500px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
-.register {
-    background-color: hsl(0, 0%, 100%);
-    min-height: 300px;
-    border-radius: 10px;
+.submit:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
 }
 
-input {
-    margin: 10px 8%;
-    width: 84%;
-    height: 50px;
-    border-color: hsl(246, 25%, 77%);
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
+.hide {
+    display: none;
 }
 
-#fname {
-    margin-top: 50px;
+.card2 {
+    text-align: center;
 }
 
-button {
-    background-color: hsl(154, 59%, 51%);
-    border-style: none;
-    border-radius: 5px;
-    font-size: 16px;
-    color: hsl(0, 0%, 100%);
-    height: 50px;
-    width: 84%;
-    margin: 10px 8%;
+.thank-img {
+    margin: 30px 0;
 }
 
-
-
-/* Mobile */
-
-@media screen and (max-width: 375px) {
-
-/* typo */
-
-    h1 {
-        font-size: 30px;
-        margin: auto 90px;
-    }
-
-    .ads p {
-        font-size: 16px;
-        color: hsl(0, 0%, 100%);
-        font-weight: 400;
-        margin: auto 90px;
-    }
-
-    .free-trial p {
-        margin: auto 100px;
-        padding-top: 20px;
-    }
-
-    main {
-        display: block;
-        margin-bottom: 5rem;
-    }
-    
-    .caution{
-        padding: 10px 70px 5px 70px ;
-    }
-
-    /* upper */
-    .ads {
-        width: 600px;
-        margin: 5rem auto;
-        text-align: center;
-    }
-    /* lower */ 
-    .form {
-        margin: auto 50px;
-        display: block;
-    }
-
-    /* container */
-
-    .free-trial {
-        height: 90px;
-        width: 400px;
-        margin: 0 auto 30px auto;
-    } 
-    .register {
-        height: 490px;
-    }
+.result {
+    font-size: 15px;
+    font-weight: 400;
+    background-color: hsl(215, 15%, 22%);
+    color: hsl(25, 97%, 53%);
+    text-align: center;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 20px;
 }

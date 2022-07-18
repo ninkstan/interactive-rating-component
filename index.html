@@ -3,43 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <link rel="script" href="script.js">
-  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <title>Frontend Mentor | Interactive rating component</title>
 
 </head>
-
 <body>
-<main>
-<!--Learn to code-->
-  <section class="ads">
-    <h1>Learn to code by watching others</h1>
-    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-    but understanding how developers think is invaluable. </p>
-  </section>
 
-<!--Register form-->
-  <section class="form">
-
-    <div class="free-trial">
-      <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+  <main>
+    <!-- Rating state start -->
+    <div class="card1 ">
+      <img class="star-img" src="/images/icon-star.svg" alt="star icon">
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+      <span>
+        <button class="rating">1</button>
+        <button class="rating">2</button>
+        <button class="rating">3</button>
+        <button class="rating">4</button>
+        <button class="rating">5</button>
+      </span>
+      <button class="submit">SUBMIT</button>
     </div>
+    <!-- Rating state end -->
 
-    <div class="register">
-
-      <form>
-        <input type="text" id="fname" name="fname" placeholder="First Name"><br>
-        <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
-        <input type="text" id="email" name="email" placeholder="Email Address"><br>
-        <input type="password" id="password" name="password" placeholder="Password">
-      </form>
-
-      <button>CLAIM YOUR FREE TRIAL</button>
-      <p class="caution">By clicking the button, you are agreeing to our <b>Terms and Services</b></p>
+    <!-- Thank you state start -->
+    <div class="card2 hide">
+      <img class="thank-img" src="/images/illustration-thank-you.svg" alt="thank you">
+      <br>
+      <div class="result">You selected <text class="score"></text> out of 5</div>
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
     </div>
-  </section>  
-</main>
+  </main> 
+
+  <script src="script.js"></script>
+
 </body>
+
+
+
 </html>
